@@ -10,8 +10,8 @@ using VoxelEngine;
 namespace TractorBeam
 {
     #if KEEL_WEAPON_ATTACHMENTS
-    [BepInPlugin(Owner, "Tractor Beam", "0.3.5")]
-    [BepInDependency(Sevo.Framework.Runtime.Plugin.Id, "0.1.4")]
+    [BepInPlugin(Owner, "Tractor Beam", "0.3.6")]
+    [BepInDependency(Sevo.Framework.Runtime.Plugin.Id, "0.1.5")]
     #else
     [BepInPlugin(Owner, "Tractor Beam", "0.2.2")]
     [BepInDependency(Sevo.Framework.Runtime.Plugin.Id, "0.1.2")]

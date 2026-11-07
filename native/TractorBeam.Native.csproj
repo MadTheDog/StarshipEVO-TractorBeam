@@ -8,7 +8,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(EnableWeaponAttachments)' == 'true'">
     <DefineConstants>$(DefineConstants);KEEL_WEAPON_ATTACHMENTS</DefineConstants>
-    <Version>0.3.5</Version>
+    <Version>0.3.6</Version>
   </PropertyGroup>
   <ItemGroup Condition="'$(EnableWeaponAttachments)' == 'true'">
     <EmbeddedResource Include="../assets/upgrade-meshes/*.json">

@@ -19,7 +19,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $data 'globalgamemanagers')).Hash -ne 
 $expectedPlugins = @('Sevo.Framework.Runtime.dll', 'Sevo.Framework.Sdk.dll', 'TractorBeam.dll')
 if ($MeshSmoke) { $Modular = $true; $LogicSmoke = $true }
 $definitionCount = if ($Modular) { 7 } else { 1 }
-$keelVersion = if ($Modular) { '0.1.4-codex-categories' } else { '0.1.2' }
+$keelVersion = if ($Modular) { '0.1.5' } else { '0.1.2' }
 if ($VisualSmoke) { $LogicSmoke = $true }
 if ($LogicSmoke) {
     $Smoke = $true
@@ -31,7 +31,7 @@ if (Compare-Object ($plugins.Name | Sort-Object) ($expectedPlugins | Sort-Object
 }
 foreach ($plugin in $plugins) {
     $reference = if ($plugin.Name -eq 'TractorBeam.dll') {
-        if ($Modular) { Join-Path $PSScriptRoot 'dist/build-0.3.5/TractorBeam.dll' }
+        if ($Modular) { Join-Path $PSScriptRoot 'dist/build-0.3.6/TractorBeam.dll' }
         else { Join-Path $PSScriptRoot 'native/bin/Release/netstandard2.1/TractorBeam.dll' }
     } elseif ($plugin.Name -eq 'TractorBeam.LogicProbe.dll') {
         Join-Path $PSScriptRoot 'tests/logic/bin/Release/netstandard2.1/TractorBeam.LogicProbe.dll'

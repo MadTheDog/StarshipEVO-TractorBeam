@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.6
+
+- Publish an installable ZIP for Starship Uplink 0.1.5 repository imports.
+- Build against published Starship Keel 0.1.5, including its Weapons Codex support.
+
 ## 0.3.5 preview
 
 - Move the modular emitter and five addons to **Codex → Items → Weapons** through Keel's category API.
