@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(GameManaged)/Assembly-CSharp.dll;$(GameManaged)/UnityEngine.dll;$(GameManaged)/UnityEngine.CoreModule.dll;$(GameManaged)/UnityEngine.UI.dll;$(GameManaged)/Mirror.dll;$(GameManaged)/MessagePack.dll;$(GameManaged)/MessagePack.Annotations.dll;$(LoaderCore)/BepInEx.dll;$(KeelDir)/Sevo.Framework.Runtime.dll;$(KeelDir)/Sevo.Framework.Sdk.dll" Private="false" />
+  </ItemGroup>
+</Project>

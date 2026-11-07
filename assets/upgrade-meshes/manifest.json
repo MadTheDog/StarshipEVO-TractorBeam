@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "sourceBlendSha256": "234760b756b5fc3d0a56a2bdb3e5db3204a268364af7a5ce6c887280faaef8ae",
+  "axes": "Native Unity addon local, +Y outward, slot origin at (0,0,0).",
+  "feet": "Two procedural tapered cleats fitted to measured stock bounds; no copied game triangles.",
+  "materialOrder": [
+    "armor",
+    "dark",
+    "copper",
+    "glow"
+  ],
+  "materialColors": {
+    "armor": [
+      0.64,
+      0.6,
+      0.55
+    ],
+    "dark": [
+      0.2,
+      0.225,
+      0.25
+    ],
+    "copper": [
+      0.57,
+      0.224,
+      0.106
+    ],
+    "pull": [
+      0.08,
+      0.8,
+      0.94
+    ],
+    "push": [
+      1.0,
+      0.57,
+      0.095
+    ],
+    "slowdown": [
+      1.0,
+      0.73,
+      0.18
+    ],
+    "shield-coupling": [
+      0.56,
+      0.17,
+      0.83
+    ],
+    "capacity": [
+      0.35,
+      0.82,
+      0.13
+    ]
+  },
+  "modules": {
+    "pull": {
+      "sourceObjects": 14,
+      "sourceVertexRecords": 414,
+      "sourceTriangles": 694,
+      "sourceComparableGpuVertices": 1296,
+      "priorPerTriangleNormalVertices": 1270,
+      "sourceMaterials": 5,
+      "verifiedConvexOccluders": 9,
+      "trianglesRemoved": {
+        "fully_hidden": 66
+      },
+      "exportObjects": 1,
+      "exportVertices": 1194,
+      "exportTriangles": 628,
+      "exportMaterials": 3,
+      "bounds": {
+        "min": [
+          -0.299,
+          -0.1752149,
+          -0.321
+        ],
+        "max": [
+          0.299,
+          0.876,
+          0.315
+        ]
+      },
+      "payloadSha256": "5b8ecfd34e9f384e4d05c6ac36e9c4af338f238360c0143f0b43a60448a3f478"
+    },
+    "push": {
+      "sourceObjects": 9,
+      "sourceVertexRecords": 200,
+      "sourceTriangles": 272,
+      "sourceComparableGpuVertices": 496,
+      "priorPerTriangleNormalVertices": 502,
+      "sourceMaterials": 6,
+      "verifiedConvexOccluders": 5,
+      "trianglesRemoved": {
+        "fully_hidden": 24
+      },
+      "exportObjects": 1,
+      "exportVertices": 464,
+      "exportTriangles": 248,
+      "exportMaterials": 4,
+      "bounds": {
+        "min": [
+          -0.288,
+          -0.1752149,
+          -0.18
+        ],
+        "max": [
+          0.288,
+          0.826287,
+          0.333
+        ]
+      },
+      "payloadSha256": "2ef54af351a0b55275fe6f045f9bbeb35226355f42624a7bb602f9b9379be012"
+    },
+    "slowdown": {
+      "sourceObjects": 12,
+      "sourceVertexRecords": 306,
+      "sourceTriangles": 486,
+      "sourceComparableGpuVertices": 892,
+      "priorPerTriangleNormalVertices": 812,
+      "sourceMaterials": 4,
+      "verifiedConvexOccluders": 9,
+      "trianglesRemoved": {
+        "fully_hidden": 62
+      },
+      "exportObjects": 1,
+      "exportVertices": 794,
+      "exportTriangles": 424,
+      "exportMaterials": 3,
+      "bounds": {
+        "min": [
+          -0.344,
+          -0.1752149,
+          -0.310265
+        ],
+        "max": [
+          0.344,
+          0.791,
+          0.291
+        ]
+      },
+      "payloadSha256": "911a5fa2459bbdca6a9f21e364b5b7d5cbf1c5d9d7e5e0a1bf1432a47a2f820c"
+    },
+    "shield-coupling": {
+      "sourceObjects": 8,
+      "sourceVertexRecords": 256,
+      "sourceTriangles": 406,
+      "sourceComparableGpuVertices": 760,
+      "priorPerTriangleNormalVertices": 688,
+      "sourceMaterials": 4,
+      "verifiedConvexOccluders": 6,
+      "trianglesRemoved": {
+        "fully_hidden": 66
+      },
+      "exportObjects": 1,
+      "exportVertices": 654,
+      "exportTriangles": 340,
+      "exportMaterials": 3,
+      "bounds": {
+        "min": [
+          -0.309,
+          -0.1752149,
+          -0.291
+        ],
+        "max": [
+          0.309,
+          0.617,
+          0.271
+        ]
+      },
+      "payloadSha256": "1127a2a100b06d61bb28aa02a10ecc13994fdb83b5d18ced44e2a642f127249b"
+    },
+    "capacity": {
+      "sourceObjects": 16,
+      "sourceVertexRecords": 504,
+      "sourceTriangles": 870,
+      "sourceComparableGpuVertices": 1624,
+      "priorPerTriangleNormalVertices": 1140,
+      "sourceMaterials": 5,
+      "verifiedConvexOccluders": 14,
+      "trianglesRemoved": {
+        "fully_hidden": 294
+      },
+      "exportObjects": 1,
+      "exportVertices": 1122,
+      "exportTriangles": 576,
+      "exportMaterials": 3,
+      "bounds": {
+        "min": [
+          -0.315,
+          -0.1752149,
+          -0.316
+        ],
+        "max": [
+          0.315,
+          0.8839999,
+          0.303
+        ]
+      },
+      "payloadSha256": "ef4e7afb190bcd047cbae28abd1f967f6f9d7957372e8c8c4c63150c398da2ca"
+    }
+  }
+}

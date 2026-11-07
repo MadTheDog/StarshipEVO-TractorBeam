@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "local.sevo.tractorbeam",
+  "name": "Tractor Beam",
+  "version": "0.2.2",
+  "payloadRoot": "plugin",
+  "dependencies": {},
+  "conflicts": [],
+  "fixedBrickIds": [],
+  "fixedShapeIds": []
+}

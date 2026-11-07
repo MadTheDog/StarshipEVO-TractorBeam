@@ -1,0 +1,37 @@
+{
+  "target": "26451593 / 26w45a",
+  "socketUnity": [
+    0,
+    0.5,
+    0.5
+  ],
+  "repeatPitch": 1,
+  "fit": "Host respects stock envelope; small separate center fitting matches stock repeat footprint and clears the cleats.",
+  "centerFittingIntersectionPairs": {
+    "pull": 0,
+    "push": 0,
+    "slowdown": 0,
+    "shield-coupling": 0,
+    "capacity": 0
+  },
+  "before": {
+    "recessed-optic-host": {
+      "vertices": 616,
+      "triangles": 264
+    },
+    "recessed-optic-repeat": {
+      "vertices": 30,
+      "triangles": 12
+    }
+  },
+  "after": {
+    "recessed-optic-host": {
+      "vertices": 488,
+      "triangles": 264
+    },
+    "recessed-optic-repeat": {
+      "vertices": 24,
+      "triangles": 12
+    }
+  }
+}

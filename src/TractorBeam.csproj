@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Version>0.1.0</Version>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <KeelDir>../.refs/keel/Starship-Keel-0.1.0</KeelDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="TractorActuator.cs" />
+    <Reference Include="$(GameManaged)/Assembly-CSharp.dll;$(GameManaged)/UnityEngine.dll;$(GameManaged)/UnityEngine.CoreModule.dll;$(GameManaged)/UnityEngine.InputLegacyModule.dll;$(GameManaged)/Unity.Collections.dll;$(GameManaged)/UnityEngine.MathematicsModule.dll;$(LoaderCore)/BepInEx.dll;$(LoaderCore)/0Harmony.dll;$(KeelDir)/Sevo.Framework.Runtime.dll" Private="false" />
+  </ItemGroup>
+</Project>

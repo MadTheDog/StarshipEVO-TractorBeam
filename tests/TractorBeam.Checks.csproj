@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup><Compile Remove="logic/**" /><Compile Include="../src/TractorController.cs" Condition="Exists('../src/TractorController.cs')" /></ItemGroup>
+</Project>

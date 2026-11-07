@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>TractorBeam</AssemblyName>
+    <Version>0.2.2</Version>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableWeaponAttachments)' == 'true'">
+    <DefineConstants>$(DefineConstants);KEEL_WEAPON_ATTACHMENTS</DefineConstants>
+    <Version>0.3.5</Version>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(EnableWeaponAttachments)' == 'true'">
+    <EmbeddedResource Include="../assets/upgrade-meshes/*.json">
+      <LogicalName>TractorBeam.Meshes.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="../assets/emitter-meshes/recessed-optic-host.json;../assets/emitter-meshes/recessed-optic-section.json">
+      <LogicalName>TractorBeam.Meshes.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Target Name="RequireKeel" BeforeTargets="ResolveAssemblyReferences"
+          Condition="!Exists('$(KeelDir)/Sevo.Framework.Runtime.dll') Or !Exists('$(KeelDir)/Sevo.Framework.Sdk.dll')">
+    <Error Text="Set KeelDir to a local Keel SDK/runtime pair with the functional Repair Beam API." />
+  </Target>
+  <ItemGroup>
+    <Compile Include="../src/TractorActuator.cs;../src/TractorController.cs" />
+    <Reference Include="$(GameManaged)/Assembly-CSharp.dll;$(GameManaged)/UnityEngine.dll;$(GameManaged)/UnityEngine.CoreModule.dll;$(GameManaged)/Unity.Collections.dll;$(GameManaged)/UnityEngine.MathematicsModule.dll;$(LoaderCore)/BepInEx.dll;$(LoaderCore)/0Harmony.dll;$(KeelDir)/Sevo.Framework.Runtime.dll;$(KeelDir)/Sevo.Framework.Sdk.dll" Private="false" />
+  </ItemGroup>
+</Project>

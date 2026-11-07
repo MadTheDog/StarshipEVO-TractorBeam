@@ -1,0 +1,8 @@
+.refs/
+.tools-home/
+**/bin/
+**/obj/
+dist/
+local-evidence/
+test-install/
+test-profile/
